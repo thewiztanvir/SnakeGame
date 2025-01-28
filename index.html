@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nokia Snake</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="phone-body">
+        <div class="screen-container">
+            <div class="game-display">
+                <div class="game-info">
+                    <div>Score: <span id="score">0</span></div>
+                    <div>High: <span id="highScore">0</span></div>
+                </div>
+                <canvas id="gameCanvas"></canvas>
+                <div id="gameOver">
+                    <h2>GAME OVER</h2>
+                    <p>Score: <span id="finalScore">0</span></p>
+                    <button class="btn-start" onclick="startGame()">PLAY AGAIN</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div></div>
+            <button class="control-btn" id="btnUp">↑</button>
+            <div></div>
+            <button class="control-btn" id="btnLeft">←</button>
+            <button class="control-btn" id="btnCenter">●</button>
+            <button class="control-btn" id="btnRight">→</button>
+            <div></div>
+            <button class="control-btn" id="btnDown">↓</button>
+            <div></div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
